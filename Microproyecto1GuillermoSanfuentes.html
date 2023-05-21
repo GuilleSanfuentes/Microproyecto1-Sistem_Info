@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoria</title>
+    <style>
+        body {
+            background-image: url('https://lh3.googleusercontent.com/p/AF1QipPovWURrrTXrt1vxiBwuKayqLLd4h7VUGmT0G06=s1360-w1360-h1020');background-position: center,top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+        }
+        .center {
+            margin: auto;
+            width: 80%;
+            padding: 1%;
+            text-align: center; text-align: center; background-color: rgba(26, 43, 57, 0.437);
+        }
+        .texto {
+            font-size: larger;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #ffffff;
+        }
+        .juego {
+            visibility:hidden;
+            box-sizing: border-box;
+        }
+</style>
+</head>
+<body style="text-align: center;">
+    <br>
+    <div class="center">
+        <!-- Cuadro de bienvenida -->
+        <div>
+            <h1 style="font-family:Georgia, 'Times New Roman', Times, serif; color:#ffaa00;" >Bienvenid@s!</h1>
+        </div>
+        <div class="texto">
+            <h3>A continuación les presento el juego de Memoria de la materia Sistemas de Información!</h3>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="center">
+        <!-- Cuadro donde se encuentra el juego -->
+        <div id="juegoBox" class="juego">
+            <script>
+                
+                <!-- (document.getElementById("nombre")) -->
+            </script>
+        </div>
+
+        <!-- Cuadro del Formulario -->
+        <div class="texto" id="Formulario">
+            <div>
+                <h3>Escriba su nombre en el formulario para luego proceder a comenzar el juego de memoria</h3>
+            </div>
+            <br>
+            <div>
+                <form action="">
+                    <label for="nombre">Nombre:</label><br><br>
+                    <input type="text" id="nombre" value="Nombre"><br><br>
+                    <input type="button" onclick="juegoBox.style.visibility='visible';Formulario.style.visibility='collapse'" value="Continuar">
+                    </form> 
+            </div>
+        </div>
+        <div>
+            <p class="texto">Guillermo Sanfuentes <br> V-27770077 <br> Carnet: 20191130013 </p>
+        </div>
+    </div>
+    
+    <br>
+
+    <div>
+        <p class="texto">
+            Ranking
+        </p>
+    </div>
+</body>
+</html>
