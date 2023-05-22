@@ -23,52 +23,115 @@
             color: #ffffff;
         }
         .juego {
-            visibility:hidden;
+            margin: auto;
+            width: 80%;
+            padding: 3%;
+            text-align: justify; 
+            background-color: rgba(26, 43, 57, 0.437);
+            visibility:visible;
             box-sizing: border-box;
         }
+        .justo {
+            text-align: center;
+            align-items: center;
+            align-content: space-evenly;
+        }
+        .carta { 
+            width: 20%;   
+            height: 50%; 
+            padding: 1%;
+        }
 </style>
+    
 </head>
 <body style="text-align: center;">
     <br>
-    <div class="center">
+
+    <div id="1era etapa">
+        <div class="center">
         <!-- Cuadro de bienvenida -->
         <div>
-            <h1 style="font-family:Georgia, 'Times New Roman', Times, serif; color:#ffaa00;" >Bienvenid@s!</h1>
+            <h1 style="font-family:Georgia, 'Times New Roman', Times, serif; color:#ffaa00;">Bienvenid@s!</h1>
         </div>
         <div class="texto">
             <h3>A continuación les presento el juego de Memoria de la materia Sistemas de Información!</h3>
         </div>
-    </div>
-
-    <br>
-
-    <div class="center">
-        <!-- Cuadro donde se encuentra el juego -->
-        <div id="juegoBox" class="juego">
-            <script>
-                
-                <!-- (document.getElementById("nombre")) -->
-            </script>
         </div>
 
+        <br>
+    
+        <div class="center">
+        
         <!-- Cuadro del Formulario -->
-        <div class="texto" id="Formulario">
+        <div class="texto" >
             <div>
                 <h3>Escriba su nombre en el formulario para luego proceder a comenzar el juego de memoria</h3>
             </div>
             <br>
-            <div>
-                <form action="">
-                    <label for="nombre">Nombre:</label><br><br>
-                    <input type="text" id="nombre" value="Nombre"><br><br>
-                    <input type="button" onclick="juegoBox.style.visibility='visible';Formulario.style.visibility='collapse'" value="Continuar">
+                <div>
+                    <form action="" id="Formulario">
+                        <label for="nombre">Nombre:</label><br><br>
+                        <input type="text" id="nombre" placeholder="Nombre"><br><br>
+                        <input type="button" onclick="juegoBox.style.visibility='visible';Formulario.style.visibility='collapse';Voltear(Carta1)" value="Continuar">
                     </form> 
+                </div>
             </div>
         </div>
+    </div>
+    
+        <!-- Cuadro donde se encuentra el juego -->
+    <div id="juegoBox" class="juego">
+        <script>
+        //    const formularioHTML = document.getElementById("Formulario");
+        //    var name = formularioHTML.elements["nombre"];
+        //    let apodo = name.value;
+            var Lili = "https://lh3.googleusercontent.com/a-/ACB-R5Q0uVkTCZJw-zOxzNxDg6TDDnmm8znlH-64kHWG6A=s408-p-k-rw-no";
+            var Sebastian = "https://lh3.googleusercontent.com/a-/ACB-R5TAWp7Hyk1jsv_X0xLZEj8NjCn0ld__oNRJY1AJ=s408-p-k-rw-no";
+            var Profe = "https://lh3.googleusercontent.com/a-/ACB-R5SgwzWO2f7rr4EB0B422XGjgWXo3Gc8A_o1A57v=s408-p-k-rw-no";
+            var IsaCarrillo = "https://lh3.googleusercontent.com/a-/ACB-R5Q_j8H4ep4RWfQ2crVb_9992jfE07yxA0g6Zv1JYWmaccgZBbsyJGyIFnqrps4ywycV4hqwKQ2u9A3WiNgYeAmdEcyHMMkKstSs1VwArYFBwMRnOaV1eN7lVDl-RPnrXWmOm6RHsvc7IbsVjvZW7qQYadXgOcw6BeLcGw3ope7QXvZIBjTp_boDhJ_vwR0FfArXPTS8txDyQSe40alYjQW5lEqahe3VTwxTmN0YFzTeXt7CfO1jiT1Ey-gb4236NIL6HmvdWPYmFUZK4KwY3M5lqdav5XW0AHdEoJwhTB8F4OVJgOiN1wqfDKsqczEf4hqw8dHoiUSWhE88nAwQ3Q1txaYeHZeuaPShUR5OW3hOX4ctXRXFxW7m3lW48BilMLrFWWo6_qT0Y-2TT3uczDALelZ-fzUjHFwentEfo08K-3w6icfoFAJz5eX77JteTkNKqsS4QuHyg-ONG6sZY7wAD6JGIEYntizp9SrNcurP5QVr-uQF8qZe2Nb01MsRkE9mAX1bit-dNZg8mPIHfBX9dHR2cBSd31YuVMWGVlZh0H0UNFzBSx8gotHIdjnUxzFWy0zX8eVFMUZKfsejcI-HogIHUCLLr-m1Mur1tfR0gXeFFJDP7dLRkg_eaxqBQ3qqutZzgj_dxV_3fxXreGRpYF_fXYycYzEZITq24DtzmDod5S36MJ-i2brMJG-vKi_25uOi9O-NKaNB9XjuwRs_88jzUlJlHTHgHU-hGbI7C8j06jRdh6LYAl5VeN8Ku-PFJ5WFOVOYT2a-neXZ_CRLW3Adz1Qg-qvPLHNXJ9Lu05AB_N5tXG1ncM3VBy73NSCjT0xYh_ICxy_OYHZWpshov2Pl65rCvYwPUjjGU6yDFQK9QqNOK4C0TBwtxgrF52Cuy4KC37ZpMMjjbLmvm9N2O9ACPJN6rxcxGffu4J0Yk2W0xjMjcGsw9ZXV2Q=s408-p-k-rw-no";
+            var AndreinaRivas = "https://lh3.googleusercontent.com/a-/ACB-R5RiuKJcBdKRoB9s0DiThksGgM1s499Cw8PGE8kz=s408-p-k-rw-no";
+            var AndresMartin = "https://lh3.googleusercontent.com/a-/ACB-R5TuxtwZ83URHA5wUfx2WE8DmXhjHw_Y9pio3DwW=s408-p-k-rw-no";
+            var Pilar = "https://lh3.googleusercontent.com/a-/ACB-R5TbS7mt6G78bB8RyEik_04IDL7h3rKukL8pwogZ=s408-p-k-rw-no";
+            var Estres = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72dDLvrIqoEmRshnONwhgggoxhz0cuoh2qg&usqp=CAU";
+            
+            function cambiarSrc(xCarta){
+                if (xCarta = Carta1) {
+                    document.getElementById(xCarta).src = Lili;
+                } else if (xCarta = Carta2) {
+                    document.getElementById(xCarta).src = Sebastian;
+                } else if (xCarta = Carta3) {
+                    document.getElementById(xCarta).src = Profe;
+                } else if (xCarta = Carta4) {
+                    document.getElementById(xCarta).src = IsaCarrillo;
+                } else if (xCarta = Carta5) {
+                    document.getElementById(xCarta).src = AndreinaRivas;
+                } else if (xCarta = Carta6) {
+                    document.getElementById(xCarta).src = AndresMartin;
+                } else if (xCarta = Carta7) {
+                    document.getElementById(xCarta).src = Pilar;
+                } else{
+                    document.getElementById(xCarta).src = Estres;
+                };
+                return
+            }
+
+        </script>
+        <div class="justo"> 
+            <img class="carta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSc7jMBfB98rp5K6BIhhVU6Dbgz_ebpog_wg&usqp=CAU" id="Carta1" onclick="cambiarSrc(this.id)">
+            <img class="carta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSc7jMBfB98rp5K6BIhhVU6Dbgz_ebpog_wg&usqp=CAU" id="Carta2" onclick="cambiarSrc(this.id)">
+            <img class="carta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSc7jMBfB98rp5K6BIhhVU6Dbgz_ebpog_wg&usqp=CAU" id="Carta3" onclick="cambiarSrc(this.id)">
+            <img class="carta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSc7jMBfB98rp5K6BIhhVU6Dbgz_ebpog_wg&usqp=CAU" id="Carta4" onclick="cambiarSrc(this.id)">
+        </div>
+        <div class="justo"> 
+            <img class="carta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSc7jMBfB98rp5K6BIhhVU6Dbgz_ebpog_wg&usqp=CAU" id="Carta5" onclick="cambiarSrc(this.id)">
+            <img class="carta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSc7jMBfB98rp5K6BIhhVU6Dbgz_ebpog_wg&usqp=CAU" id="Carta6" onclick="cambiarSrc(this.id)">
+            <img class="carta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSc7jMBfB98rp5K6BIhhVU6Dbgz_ebpog_wg&usqp=CAU" id="Carta7" onclick="cambiarSrc(this.id)">
+            <img class="carta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSc7jMBfB98rp5K6BIhhVU6Dbgz_ebpog_wg&usqp=CAU" id="Carta8" onclick="cambiarSrc(this.id)">
+        </div>
+    </div>
         <div>
             <p class="texto">Guillermo Sanfuentes <br> V-27770077 <br> Carnet: 20191130013 </p>
         </div>
-    </div>
     
     <br>
 
